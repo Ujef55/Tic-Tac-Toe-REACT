@@ -1,4 +1,5 @@
-import Player from "./assets/Components/Player"
+import Player from "./assets/Components/Player";
+import GameBoard from "./assets/Components/GameBoard";
 
 function App() {
   return (
@@ -8,10 +9,10 @@ function App() {
           <Player initialName='Player 1' symbol='X' />
           <Player initialName='Player 2' symbol='O' />
         </ol> 
-        Game Board 
+        <GameBoard />
       </div>
     </main>
   )
 }
 
-export default App
+export default App;
