@@ -1,11 +1,11 @@
-function GameOver( {winner} ) {
+function GameOver( {winner, reset} ) {
     return (
         <div id="game-over">
             <h2>GAME OVER!</h2>
             {winner && <p>{winner}, WON!</p>}
             {!winner && <p>IT'S A DRAW!</p>}
             <p>
-                <button>REMATCH!</button>
+                <button onClick={reset}>REMATCH!</button>
             </p>
         </div>
     )
